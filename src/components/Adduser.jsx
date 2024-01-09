@@ -54,11 +54,11 @@ function Adduser() {
       <div id="content">
         <div className="container-fluid">
           <div className="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 className="h3 mb-0 text-gray-800">Add User</h1>
+    
           </div>
           <Form onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3">
-            <Form.Label style={{ color: "black", fontFamily: "cursive", fontSize: "20px", fontWeight: "bold", textAlign: "center", display: "flex", alignItems: "center" }}>Books</Form.Label>
+            <Form.Label style={{ color: "black", fontFamily: "cursive", fontSize: "22px", fontWeight: "bold", display: "flex", alignItems: "center", justifyContent:"center" }}>Books 📚📕</Form.Label>
 
               <Form.Control style={{textAlign:"center"}}
                 type="text"
@@ -69,7 +69,7 @@ function Adduser() {
                 value={formik.values.Books.Title}
                 onBlur={formik.handleBlur}
               />
-              {formik.touched.Books?.Title && formik.errors.Books?.Title ? (
+              {formik.touched.Books?.Title && formik.errors.Books?.Title  ? (
                 <div style={{ color: "red" }}>{formik.errors.Books.Title}</div>
               ) : null}
 <br/>
@@ -114,7 +114,7 @@ function Adduser() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label style={{color:"black",fontFamily:"cursive",fontSize:"20px",fontWeight:"bold"}}>Author</Form.Label>
+              <Form.Label style={{ color: "black", fontFamily: "cursive", fontSize: "22px", fontWeight: "bold", display: "flex", alignItems: "center", justifyContent:"center" }}>📗Author's Details 👴👵</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Authors_Name"
@@ -155,7 +155,7 @@ function Adduser() {
               ) : null}
             </Form.Group>
             <div style={{ display: "flex", justifyContent: "center" }}>
-  <Button variant="primary" type="submit">
+  <Button  variant="primary" type="submit">
     Submit
   </Button>
 </div>

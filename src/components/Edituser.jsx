@@ -89,12 +89,12 @@ function Edituser() {
       <div id="content">
         <div className="container-fluid">
           <div className="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 className="h3 mb-0 text-gray-800">Edit User</h1>
+    
           </div>
           <Form onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Books</Form.Label>
-              <Form.Control
+            <Form.Label style={{ color: "black", fontFamily: "cursive", fontSize: "22px", fontWeight: "bold", display: "flex", alignItems: "center", justifyContent:"center"}}>Books 📚📕</Form.Label>
+            <Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="Title"
                 id="Title"
@@ -105,7 +105,7 @@ function Edituser() {
               />
               {formik.touched.Books?.Title && formik.errors.Books?.Title ? (
                 <div style={{ color: "red" }}>{formik.errors.Books.Title}</div>
-              ) : null}
+              ) : null}<br/>
 
               <Form.Control
                 type="text"
@@ -118,9 +118,9 @@ function Edituser() {
               />
               {formik.touched.Books?.Author && formik.errors.Books?.Author ? (
                 <div style={{ color: "red" }}>{formik.errors.Books.Author}</div>
-              ) : null}
+              ) : null}<br/>
 
-              <Form.Control
+<Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="ISBN Number"
                 id="ISBN_Number"
@@ -134,9 +134,9 @@ function Edituser() {
                 <div style={{ color: "red" }}>
                   {formik.errors.Books.ISBN_Number}
                 </div>
-              ) : null}
+              ) : null}<br/>
 
-              <Form.Control
+<Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="Publication_Date"
                 id="Publication_Date"
@@ -150,12 +150,12 @@ function Edituser() {
                 <div style={{ color: "red" }}>
                   {formik.errors.Books.Publication_Date}
                 </div>
-              ) : null}
+              ) : null}<br/>
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Author</Form.Label>
-              <Form.Control
+            <Form.Label style={{ color: "black", fontFamily: "cursive", fontSize: "22px", fontWeight: "bold", display: "flex", alignItems: "center", justifyContent:"center" }}>📗Author's Details 👴👵</Form.Label>
+            <Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="Authors_Name"
                 id="Authors_Name"
@@ -169,9 +169,9 @@ function Edituser() {
                 <div style={{ color: "red" }}>
                   {formik.errors.Author.Authors_Name}
                 </div>
-              ) : null}
+              ) : null}<br/>
 
-              <Form.Control
+<Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="Birth_Date"
                 id="Birth_Date"
@@ -185,9 +185,9 @@ function Edituser() {
                 <div style={{ color: "red" }}>
                   {formik.errors.Author.Birth_Date}
                 </div>
-              ) : null}
+              ) : null}<br/>
 
-              <Form.Control
+<Form.Control style={{textAlign:"center"}}
                 type="text"
                 placeholder="Biography"
                 id="Biography"
@@ -201,11 +201,13 @@ function Edituser() {
                 <div style={{ color: "red" }}>
                   {formik.errors.Author.Biography}
                 </div>
-              ) : null}
+              ) : null}<br/>
             </Form.Group>
+            <div style={{ display: "flex", justifyContent: "center" }}>
             <Button variant="primary" type="submit">
               Submit
             </Button>
+            </div>
           </Form>
         </div>
       </div>
