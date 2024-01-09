@@ -106,10 +106,10 @@ function Dashboard() {
         <td>{user.Books.Publication_Date}</td>
         <td>
           <Button className="btn btn-primary" onClick={() => navigate(`/edit-user/${user.id}`)}>
-            Edit
+          <i class="fa-solid fa-pen-to-square"></i>
           </Button>{' '}
           <Button className="btn btn-danger" onClick={() => handleDelete(user.id)}>
-            Delete
+          <i class="fa-solid fa-trash"></i>
           </Button>
         </td>
       </tr>
@@ -136,10 +136,10 @@ function Dashboard() {
         <td>{user.Author.Biography}</td>
         <td>
           <Button variant="primary" onClick={() => navigate(`/edit-user/${user.id}`)}>
-            Edit
+          <i class="fa-solid fa-pen-to-square"></i>
           </Button>{' '}
           <Button variant="danger" onClick={() => handleDelete(user.id)}>
-            Delete
+          <i class="fa-solid fa-trash"></i>
           </Button>
         </td>
       </tr>

@@ -10317,4 +10317,19 @@ body.sidebar-toggled footer.sticky-footer {
 .form-control{
   text-align: center;
 }
+table {
+  width: 100%;
+ 
+}
 
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black !important;
+  font-weight: bolder;
+}
+thead,th{
+  font-size:18px;
+  text-align: center;
+  background-color:var(--green) !important;
+}
